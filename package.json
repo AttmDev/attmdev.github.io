@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "cypress": "^6.1.0",
+    "gh-pages": "^4.0.0",
     "react-scripts": "^4.0.1",
     "start-server-and-test": "^1.11.6"
   },
@@ -30,6 +31,8 @@
     "test": "react-scripts test --env=jsdom",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --config video=false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "cypress:ci": "BROWSER=none start-server-and-test start http://localhost:3000 cypress:run"
   },
   "eslintConfig": {
