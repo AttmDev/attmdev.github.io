@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/attmdev.github.io/static/css/main.d4fc5623.chunk.css",
+    "main.js": "/attmdev.github.io/static/js/main.0edc1591.chunk.js",
+    "main.js.map": "/attmdev.github.io/static/js/main.0edc1591.chunk.js.map",
+    "runtime-main.js": "/attmdev.github.io/static/js/runtime-main.82ce359d.js",
+    "runtime-main.js.map": "/attmdev.github.io/static/js/runtime-main.82ce359d.js.map",
+    "static/js/2.f1501f8c.chunk.js": "/attmdev.github.io/static/js/2.f1501f8c.chunk.js",
+    "static/js/2.f1501f8c.chunk.js.map": "/attmdev.github.io/static/js/2.f1501f8c.chunk.js.map",
+    "index.html": "/attmdev.github.io/index.html",
+    "static/css/main.d4fc5623.chunk.css.map": "/attmdev.github.io/static/css/main.d4fc5623.chunk.css.map",
+    "static/js/2.f1501f8c.chunk.js.LICENSE.txt": "/attmdev.github.io/static/js/2.f1501f8c.chunk.js.LICENSE.txt",
+    "static/media/logo.2d27ead7.svg": "/attmdev.github.io/static/media/logo.2d27ead7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82ce359d.js",
+    "static/js/2.f1501f8c.chunk.js",
+    "static/css/main.d4fc5623.chunk.css",
+    "static/js/main.0edc1591.chunk.js"
+  ]
+}
