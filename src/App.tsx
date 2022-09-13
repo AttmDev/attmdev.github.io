@@ -14,7 +14,6 @@ import {
 import RatingControl from './RatingControl';
 import ratingControlTester from './ratingControlTester';
 import { makeStyles } from '@mui/styles';
-import {Generate} from "@jsonforms/core";
 
 const useStyles = makeStyles({
   container: {
@@ -43,22 +42,28 @@ const useStyles = makeStyles({
 });
 
 const initialData = {
-  name: 'HCM'
+  name: 'Send email to Adrian',
+  description: 'Confirm if you have passed the subject\nHereby ...',
+  done: true,
+  recurrence: 'Daily',
+  rating: 3,
 };
 
 const renderers = [
   ...materialRenderers,
   //register custom renderers
-  // { tester: ratingControlTester, renderer: RatingControl },
+  { tester: ratingControlTester, renderer: RatingControl },
 ];
 
 const App = () => {
   const classes = useStyles();
   const [data, setData] = useState<any>(initialData);
   const stringifiedData = useMemo(() => JSON.stringify(data, null, 2), [data]);
+
   const clearData = () => {
     setData({});
   };
+
   return (
     <Fragment>
       <div className='App'>
@@ -100,7 +105,7 @@ const App = () => {
               schema={schema}
               uischema={uischema}
               data={data}
-              renderers={materialRenderers}
+              renderers={renderers}
               cells={materialCells}
               onChange={({ errors, data }) => setData(data)}
             />
